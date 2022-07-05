@@ -1,0 +1,27 @@
+{% extends 'councilor/base1.html' %} {% block content %}
+<style>
+    .container{
+        padding-top:55px;
+    }
+    
+</style>
+<fieldset>
+<div class="container">
+    <div class="box" style="width:880px;height:250px;padding-top:50px;padding-left:50px;background-color:lightblue;">
+    
+<label>Starting date:</label>
+<input type="date" name="startdate">
+<br>
+<br>
+<br>
+<label>Endiing date:</label>
+<input type="date" name="enddate">
+<br>
+<br>
+<center>
+<a href="{% url 'attendancesearch' %}" type="button" class="btn btn-danger" style="height:39px;">Search</a>
+</center>
+</div>
+</div>
+</fieldset>
+{% endblock %}

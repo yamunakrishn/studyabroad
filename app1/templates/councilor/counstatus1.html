@@ -22,7 +22,7 @@
                 </div>
                 <div class="text-center py-3 fs-3 font-monospace">
                     <h6 class=" fs-6 py-2">Joining date: 20/05/2022</h6>
-                    <h6 class=" fs-6 py-2">Designation:Canadite</h6>
+                    <h6 class=" fs-6 py-2">Designation:IT Head</h6>
                 </div>
             </div>
         </div>
@@ -128,6 +128,33 @@
 
 
 </div>
+<div id="piechart"></div>
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<script type="text/javascript">
+// Load google charts
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+// Draw the chart and set the chart values
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+  ['Task', 'Hours per Day'],
+  
+  ['Attitude', 3],
+  ['Creativity', 4],
+  ['Work performace', 7.5],
+  
+]);
+// Optional; add a title and set the width and height of the chart
+var options = {'title':'Performance chart', 'width':950, 'height':400};
+
+// Display the chart inside the <div> element with id="piechart"
+var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+chart.draw(data, options);
+}
+</script>
 
 
 

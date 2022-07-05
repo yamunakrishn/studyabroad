@@ -42,8 +42,7 @@ def status2(request):
 # #eldho    
 
 
-def signupp(request):
-    return render(request,'signup.html')
+
 def newlyassignleads(request):
      return render(request, 'councilor/newly_leads.html')
 def status1(request):
@@ -51,38 +50,8 @@ def status1(request):
 
 
 
-def DocumentOfficer_index(request):
-    return render(request,"DocumentOfficer_index.html")
 
-def DocumentOfficer_newly_assigned_leads(request):
-    return render(request, "DocumentOfficer_newly_assigned_leads.html")
 
-def DocumentOfficer_Previous_leads(request):
-    return render(request, "DocumentOfficer_Previous_leads.html")
-
-def DocumentOfficer_index(request):
-    return render(request,"DocumentOfficer_index.html")
-    
-def DocumentOfficer_dashboard(request):
-    return render(request,"DocumentOfficer_dashboard.html")
-    
-def DocumentOfficer_CurrentLeads_table(request):
-    return render(request,"DocumentOfficer_CurrentLeads_table.html")
-    
-def DocumentOfficer_CanadaDocuments(request):
-    return render(request,"DocumentOfficer_CanadaDocuments.html")
-
-def DocumentOfficer_UKDocuments(request):
-    return render(request,"DocumentOfficer_UKDocuments.html")
-
-def DocumentOfficer_Accsetting(request):
-    return render(request,"DocumentOfficer_Accsetting.html")
-
-def DocumentOfficer_Previous_CanadaDocuments(request):
-    return render(request,"DocumentOfficer_Previous_CanadaDocuments.html")
-
-def DocumentOfficer_Previous_UKDocuments(request):
-    return render(request,"DocumentOfficer_Previous_UKDocuments.html")    
 
 
     #Attendance
@@ -105,5 +74,10 @@ def currentdocoff(request):
     return render(request,'currentdocoff.html')
 def attendancecard(request):
     return render(request,'attendancecard.html')
+def attendanceview(request):
+    return render(request,'attendanceview.html')
+def attendancesearch(request):
+    return render(request,'attendancesearch.html')
+
 
 

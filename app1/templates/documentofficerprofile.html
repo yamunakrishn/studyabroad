@@ -121,7 +121,7 @@
 <style>
     .popup{
         width:450px;
-        height:610px;
+        height:580px;
         background: white;
         border-radius:6px;
         position:absolute;
@@ -155,29 +155,31 @@
       </center>
       <br>
         <form action="">
-            First name:<br>
-            <input type="text" name="firstname">
-            <br>
-            Last name:<br>
-            <input type="text" name="lastname">
-            <br>
-            Contact no:<br>
-            <input type="text" name="cntct">
-            <br>
-            E-mail id:<br>
-            <input type="e-mail" name="email">
-            <br>
-            Address:<br>
-            <input type="textarea" style="width:183px;height:74px;" name="address">
+            
+            <input type="text" placeholder="Name" style="width:315px;" name="firstname">
             <br>
             
-            
-            State:<br>
-            <input type="text" name="state">
             <br>
-            <label for="country">Country:</label><br>
+            
+            <input type="text" placeholder="Contact no:" style="width:315px;" name="cntct">
+            <br>
+            <br>
+            
+            <input type="e-mail" placeholder="E-mail id:" style="width:315px;" name="email">
+            <br>
+            <br>
+            
+            <input type="textarea" placeholder="Address" style="width:315px;height:74px;" name="address">
+            <br>
+            
+            <br>
+            
+            <input type="text" placeholder="State" style="width:315px;" name="state">
+            <br>
+            <br>
+            
 
-<select name="country" id="country">
+<select name="country" style="width:315px;" id="country">
   <option value="India">India</option>
   <option value="uk">UK</option>
   <option value="eng">England</option>
@@ -186,7 +188,7 @@
 <br>
 
             <br>
-            <label for="fileselect" style="padding-left:75px;">photo</label>
+            <label for="fileselect"  style="padding-left:75px;width:315px;"></label>
             <input type="file" name="upload" id="fileselect">
             <br>
             <br>
@@ -216,22 +218,8 @@
 <div class="row">
 
             
-    <div class="col-md-4 mb-4 stretch-card transparent">
-
-        <div class="card card-dark-blue">
-            <a href="{% url 'currentdocoff' %}">
-                <div class="card-body">
-                    <div class="mb-4  pt-4">
-                        <h4 class="text-light" style="display: inline-block;">Current Document officers </h4>
-                        <h2 class="pl-5 text-light" style="float:right;display: inline-block;">4</h2>
-                    </div>
-                    <!-- <p class="mb-4 mt-3 "><h4 class="text-light">Current Leads</h4></p>
-  <p class="fs-30  pt-2 text-light">2</p> -->
-                </div>
-            </a>
-        </div>
-
-    </div>
+    
+   
     <div class="col-md-4 mb-4 stretch-card transparent">
         <div class="card card-tale">
             <a href="{% url 'previousithead' %}">
