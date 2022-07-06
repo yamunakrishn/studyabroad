@@ -1,4 +1,4 @@
-{% extends 'councilor/base1.html' %}{%load static%} {% block content %}
+{% extends 'basehr.html' %}{%load static%} {% block content %}
 <style>
     .card {
         width: 420px;
@@ -29,8 +29,8 @@
                         <img src="{% static 'images/faces/face1.jpg' %}" alt="prof" class="w-50 rounded-circle">
                     </div>
                     <div class="text-center py-3 fs-3 font-monospace">
-                        <h6 class=" fs-6 py-2">Joining date: 20/05/2022</h6>
-                        <h6 class=" fs-6 py-2">Designation: Student Councilor</h6>
+                        <h6 class=" fs-6 py-2">Joined date: 20/05/2022</h6>
+                        <h6 class=" fs-6 py-2">Designation:  Candidate</h6>
                     </div>
                 </div>
             </div>
@@ -124,9 +124,15 @@
                 </div>
             </div>
         </div>
-<br>
-<br>
-<div id="piechart"></div>
+
+
+
+
+
+        
+
+
+            <div id="piechart"></div>
 
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
@@ -141,7 +147,7 @@ function drawChart() {
   ['Task', 'Hours per Day'],
   
   ['Attitude', 3],
-  ['Follow ups', 4],
+  ['Creativity', 4],
   ['Work performace', 7.5],
   
 ]);
@@ -156,7 +162,5 @@ chart.draw(data, options);
 
 
 
-
-        
 </body>
 {% endblock %}

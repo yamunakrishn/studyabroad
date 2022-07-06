@@ -15,7 +15,7 @@ def currentleadss(request):
 def previousleadss(request):
     return render(request,'previouslyassleads.html')      
 def previousdash(request):
-    return render(request,'previousleads.html')     
+    return render(request,'itheadpage.html')     
 def statuscurrent(request):
     return render(request,'status1.html')      
 
@@ -70,14 +70,28 @@ def documentofficerprofile(request):
     return render(request,'documentofficerprofile.html')
 def documentofficers(request):
     return render(request,'documentofficers.html')
+def documentofficercard(request):
+    return render(request,'documentofficercard.html')
 def currentdocoff(request):
     return render(request,'currentdocoff.html')
+def previousdocoff(request):
+    return render(request,'previousdocoff.html')
 def attendancecard(request):
     return render(request,'attendancecard.html')
 def attendanceview(request):
     return render(request,'attendanceview.html')
 def attendancesearch(request):
     return render(request,'attendancesearch.html')
+def studentcouncilorcard(request):
+    return render(request,'studentcouncilorcard.html')
+def previousstudcounc(request):
+    return render(request,'previousstudcounc.html')
+def teamprofile(request):
+    return render(request,'teamprofile.html')
+def previousdocoffprofile(request):
+    return render(request,'previousdocoffprofile.html')
+def currentdocoffprofile(request):
+    return render(request,'currentdocoffprofile.html')
 
 
 

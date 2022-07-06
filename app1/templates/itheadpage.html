@@ -1,4 +1,4 @@
-{% extends 'base.html' %} {% block content %}
+{% extends 'basehr.html' %} {% block content %}
 
 
 
@@ -105,85 +105,7 @@
 
     }
   </style>
-<div class="container">
-  <center>
-    <button type="submit" class="btn btn-primary" style="float:center;" onclick="openPopup()">Add IT Head</button>
-  </center>
-    <div class="popup" id="popup" style="background-color:lightgreen;">
-        <a href="{% url 'previousdash' %}" class="btn btn-danger" style="float:right;"  onclick="closePopup()">X</a>
-        <br>
-        
 
-        <center>
-        <h4>Add new IT Head</h4>
-      </center>
-      <br>
-        <form action="">
-            <input type="text" placeholder="Name" style="width:315px;" name="firstname">
-            <br>
-            
-            <br>
-            
-            <input type="text" placeholder="Contact no:" style="width:315px;" name="cntct">
-            <br>
-            <br>
-            
-            <input type="e-mail" placeholder="E-mail id:" style="width:315px;" name="email">
-            <br>
-            <br>
-            
-            <input type="textarea" placeholder="Address" style="width:315px;height:74px;" name="address">
-            <br>
-            
-            <br>
-            
-            <input type="text" placeholder="State" style="width:315px;" name="state">
-            <br>
-            <br>
-            
-
-<select name="country" style="width:315px;" id="country">
-  <option value="India">India</option>
-  <option value="uk">UK</option>
-  <option value="eng">England</option>
-  
-</select>
-<br>
-
-            <br>
-            <label for="fileselect"  style="padding-left:75px;width:315px;"></label>
-            <input type="file" name="upload" id="fileselect">
-            <br>
-            <br>
-           
-
-            <a href="{% url 'previousdash' %}" class="btn btn-primary" style="width:75px;height:40px;" value="Submit" onclick="closePopup()">Submit</a>
-        </form> 
-    </div>
-</div>
-<script>
-    let popup = document.getElementById("popup");
-
-    function openPopup(){
-        popup.classList.add("open-popup");
-
-    }
-    function closePopup(){
-        popup.classList.remove("open-popup");
-
-    }
-
-</script>
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 <br>
 <br>
 <br>
@@ -195,19 +117,21 @@
 
             
     <div class="col-md-4 mb-4 stretch-card transparent">
-        <div class="card card-tale">
+        <div class="card card-tale" style="background-color:mediumseagreen;">
             <a href="{% url 'previousithead' %}">
                 <div class="card-body">
 
                     <div class="mb-4  pt-4">
-                        <h4 class="text-light" style="display: inline-block;">Previous IT Heads </h4>
-                        <h2 class="pl-5 text-light" style="float:right;display: inline-block;">7</h2>
+                        <h4 class="text-light" style="display: inline-block;">Team 1 </h4>
+                        <h2 class="pl-5 text-light" style="float:right;display: inline-block;">4</h2>
                     </div>
-                    <!-- <p class="mb-4 mt-3"><h4>Previous Leads</h4></p>
-  <p class="fs-30  pt-2">2</p> -->
+                    
                 </div>
             </a>
         </div>
     </div>
+    
+    
+
 
 {% endblock %}
